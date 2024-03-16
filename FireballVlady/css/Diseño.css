@@ -11,18 +11,18 @@ html {
 
 .video-container {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
     position: relative;
     width: 100%;
-    height: calc(100vh - 40px); /* Resta cualquier margen o relleno que pueda afectar la altura */
+    height: calc(100vh - 40px);
     overflow: hidden;
-    margin-bottom: -40px; /* Compensa el margen negativo */
+    margin-bottom: -40px; 
 }
 
 .video-container video {
     width: auto;
-    height: 100%; /* Ocupa toda la altura del contenedor */
+    height: 100%; 
     object-fit: cover;
 }
 
