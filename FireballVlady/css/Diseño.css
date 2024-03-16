@@ -10,18 +10,20 @@ html {
 }
 
 .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 40px); /* Resta cualquier margen o relleno que pueda afectar la altura */
     overflow: hidden;
-    background-size: cover;
+    margin-bottom: -40px; /* Compensa el margen negativo */
 }
 
 .video-container video {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    object-fit: cover;
 }
 
 .info-container {
@@ -33,6 +35,7 @@ html {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .cyberpunk-text {
@@ -59,4 +62,5 @@ html {
 i.icon {
     font-size: 24px;
     color: black;
+    margin: 10px;
 }
